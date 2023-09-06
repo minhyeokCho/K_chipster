@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>서브페이지샘플</title>
+
+	<link rel="stylesheet" href="../assets/css/map_pack.css">
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<!-- #header -->
+	<header id="header">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="back">
+					<span class="blind">뒤로가기</span>
+				</a>
+				<a href="#none" class="close" style="display:none">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				<strong>서브페이지</strong>
+			</h1>
+			<!--// 타이틀 -->
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<div class="btn_head btn_my" style="display:none">
+					<a href="6_mypage_01.html">
+						<span class="blind">마이페이지</span>
+					</a>
+				</div>
+				<div class="btn_head btn_chat" style="display:none">
+					<a href="#none">
+						<span class="blind">채팅</span>
+					</a>
+				</div>
+				<div class="btn_head btn_star">
+					<a href="#none">
+						<span class="blind">대표 SPOT설정</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents">
+		<div class="sub">
+			<div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet consectetur quasi aut! Sit vero, similique animi dolor, ut saepe at neque sapiente fugiat deleniti minus architecto. Odit, quis rerum!</p>
+			</div>
+			<div style="margin-top:50px;">
+				<h2 style="font-size:24px; font-weight:700;">팝업 가이드</h2>
+				<p style="font-size:16px; font-weight: 500; margin-top:20px; line-height:1.5;">
+					1.  팝업 버튼 : class="btn_pop" 필수 선언
+					<br>
+					2.  팝업 버튼 : open-pop="팝업구분값" 필수 추가
+					<br>
+					3.  팝업 : class="팝업구분값" 필수 추가 (1번과 같은 값으로 맞춰야함)
+				</p>
+				<button class="btn_pop" open-pop="get_pop" style="width:120px; height:30px; text-align:center; background-color:#222; color: #fff; margin:20px auto 0; display:block;">
+					<span>팝업 버튼</span>
+				</button>
+			</div>
+			<div style="margin-top:50px;">
+				<h2 style="font-size:24px; font-weight:700;">전체팝업 가이드</h2>
+				<p style="font-size:16px; font-weight: 500; margin-top:20px; line-height:1.5;">
+					1. 전체 팝업 버튼 : class="btn_full_pop" 필수 선언
+					<br>
+					2. 전체 팝업 버튼 : open-pop="팝업구분값" 필수 추가
+					<br>
+					3. 전체 팝업 : class="팝업구분값" 필수 추가 (1번과 같은 값으로 맞춰야함)
+				</p>
+				<button class="btn_full_pop" open-pop="talk_pop" style="width:120px; height:30px; text-align:center; background-color:#222; color: #fff; margin:20px auto 0; display:block;">
+					<span>전체팝업 버튼</span>
+				</button>
+			</div>
+			<div style="margin-top:50px;">
+				<h2 style="font-size:24px; font-weight:700;">바닥팝업 가이드</h2>
+				<p style="font-size:16px; font-weight: 500; margin-top:20px; line-height:1.5;">
+					1. 바닥 팝업 버튼 : class="btn_btm_pop" 필수 선언
+					<br>
+					2. 바닥 팝업 버튼 : open-pop="팝업구분값" 필수 추가
+					<br>
+					3. 바닥 팝업 : class="팝업구분값" 필수 추가 (1번과 같은 값으로 맞춰야함)
+				</p>
+				<button class="btn_btm_pop" open-pop="btm_edit" style="width:120px; height:30px; text-align:center; background-color:#222; color: #fff; margin:20px auto 0; display:block;">
+					<span>바닥팝업 버튼</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+
+	<!-- 메인탭바 -->
+	<aside class="tab_bar main">
+		<div class="cotn">
+			<div class="tab_btn home on"><!-- 활성화시 class="on" 추가 -->
+				<a href="1_home.html">
+					<span class="blind">홈</span>
+				</a>
+			</div>
+			<div class="tab_btn pack">
+				<a href="3_list_01.html">
+					<span class="blind">my pack</span>
+				</a>
+			</div>
+			<div class="tab_btn add">
+				<a href="5_studio_01.html">
+					<span class="blind">스튜디오</span>
+				</a>
+			</div>
+		</div >
+	</aside>
+	<!--// 메인탭바 -->
+
+	<!-- 팩탭바 -->
+	<aside class="tab_bar pack" style="display:none">
+		<div class="cotn">
+			<div class="tab_btn map on"><!-- 활성화시 class="on" 추가 -->
+				<a href="4_pack_local.html">
+					<span class="blind">내 위치</span>
+				</a>
+			</div>
+			<div class="tab_btn ar">
+				<a href="#none">
+					<span class="blind">AR</span>
+				</a>
+			</div>
+			<div class="tab_btn binder">
+				<a href="4_binder.html">
+					<span class="blind">binder</span>
+				</a>
+			</div>
+		</div>
+	</aside>
+	<!--// 팩탭바 -->
+
+</div>
+<!--// #WRAP -->
+
+<!-- Get it팝업 -->
+<section class="get_pop popup">
+	<figure class="img">
+		<img src="../assets/image/common/pop_get.png" alt="get it 팝업">
+	</figure>
+	<p class="txt">내가 가진 팩은 MY PACK메뉴에서<br>언제든지 실행할 수 있어요.</p>
+</section>
+<!--// Get it팝업 -->
+
+<!-- LIVE TALK 전체팝업 -->
+<section class="full_pop talk_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				LIVE <strong>TALK</strong>
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="talk_inner">
+				<!-- 팩 타이틀 -->
+				<div class="pack_title">
+					<h2>졸업생이 알려주는 항공대 고양이 주요 출몰 지역 찾아보면 다나옴 </h2>
+				</div>
+				<!--// 팩 타이틀 -->
+
+				<!-- talk목록 -->
+				<div class="chat_list_wrap">
+					<!-- 데이터없음 -->
+					<div class="data_none">
+						<figure class="img">
+							<img src="../assets/image/common/chip_10.png" >
+						</figure>
+						<p class="txt_01">안녕하세요~</p>
+						<p class="txt_02">팩톡을 남겨주세요!<br>첫 톡을 남겨주시면 복이 온대요~</p>
+					</div>
+					<!--// 데이터없음 -->
+				</div>
+				<!--// talk목록 -->
+
+				<!-- 채팅입력 -->
+				<div class="btm_fixed">
+					<!-- 검색 -->
+					<div class="text_input">
+						<form>
+							<input type="text" placeholder="글을 입력해 주세요">
+							<button type="button" class="btn_submit">
+								<i class="icon_submit i_chat"></i>
+							</button>
+						</form>
+					</div>
+					<!--// 검색 -->
+				</div>
+				<!--// 채팅입력 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// LIVE TALK 전체팝업 -->
+
+<!-- 삭제/신고 팝업 -->
+<section class="btm_pop btm_edit">
+	<div class="cotn">
+		<div class="btn_wrap">
+			<a href="#none" class="edit">
+				<i class="i_edit i_del"></i>
+				<span>삭제</span>
+			</a>
+			<a href="#none" class="edit close">
+				<i class="i_edit i_cancel"></i>
+				<span>취소</span>
+			</a>
+		</div>
+	</div>
+</section>
+<!--// 삭제/신고 팝업 -->
+</body>
+</html>

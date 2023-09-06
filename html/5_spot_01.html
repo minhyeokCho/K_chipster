@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#5_studio | 위치설정전</title>
+	<link rel="stylesheet" href="../assets/css/studio.css">
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap">
+	<!-- #header -->
+	<header id="header">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="1_home.html" class="back">
+					<span class="blind">뒤로가기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				<strong>SPOT</strong> INFO
+			</h1>
+			<!--// 타이틀 -->
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<div class="btn_head btn_star"><!-- 활성화시 class="on"추가 -->
+					<a href="#n">
+						<span class="blind">대표 SPOT설정</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents">
+		<div class="sub">
+			<!-- 위치설정 -->
+			<div class="spot_loc">
+				<!-- 주소입력 -->
+				<div class="addr_area">
+					<input type="text" placeholder="위치를 설정하세요" disabled>
+				</div>
+				<!--// 주소입력 -->
+
+				<!-- 지도영역 -->
+				<div class="map_area">
+					<!-- 지도 -->
+					<img src="../assets/image/temp/bg_map_01.jpg" style="height:auto; width:100%; position:absolute; top:-30%;" alt="지도">
+					<!--// 지도 -->
+
+					<!-- 내위치 아이콘 -->
+					<span class="my_loc on" style="left:50%; top:50%;"></span>
+					<!--// 내위치 아이콘 -->
+				</div>
+				<!--// 지도영역 -->
+
+				<a href="5_spot_03.html" class="go_view">
+					<span class="blind">위치찾기</span>
+				</a>
+			</div>
+			<!--// 위치설정 -->
+
+			<!-- 정보입력폼 -->
+			<div class="info_form spot_info">
+				<!-- 팩커버 -->
+				<div class="pack_cover">
+					<!-- 등록이미지 -->
+					<div class="cover_img none"><!-- 이미지없을경우 class="none"추가 -->
+						<img src="../assets/image/temp/no_img.png">
+					</div>
+					<!--// 등록이미지 -->
+
+					<!-- 등록버튼 -->
+					<div class="apply_area">
+						<p class="spot_txt">스팟에서 보여주고 싶은 카드 이미지</p>
+						<div class="info_btn">
+							<a href="#n" class="btn pt_gr btn_pop" open-pop="cover_pop">
+								<span>사진 올리기</span>
+							</a>
+							<a href="#n" class="btn ai_gr btn_full_pop" open-pop="ai_pop">
+								<span>AI로 만들기</span>
+							</a>
+						</div>
+					</div>
+					<!--// 등록버튼 -->
+				</div>
+				<!--// 팩커버 -->
+
+				<!-- 스팟 이름 -->
+				<div class="inpt_wrap">
+					<p class="tit">스팟 이름</p>
+					<input type="text" placeholder="스팟 이름을 입력하세요">
+				</div>
+				<!--// 스팟 이름 -->
+
+				<!-- 스팟 설명 -->
+				<div class="inpt_wrap">
+					<p class="tit">스팟 설명</p>
+					<textarea cols="30" rows="10" placeholder="스팟에 대한 설명을 입력하세요"></textarea>
+				</div>
+				<!--// 스팟 설명 -->
+
+				<!-- 스팟삭제하기 -->
+				<div class="btn_wrap btn_del"><!-- 비활성화 class="inactv" 추가 -->
+					<a href="#n" class="btn">
+						<span>스팟 삭제하기</span>
+					</a>
+				</div>
+				<!--// 스팟삭제하기 -->
+			</div>
+			<!--// 정보입력폼 -->
+
+			<div class="btn_wrap btn_fixed">
+				<a href="5_studio_02.html" class="btn color_type4 inactv"><span>스팟 저장하기</span></a><!-- 비활성일경우 class="inactv"추가 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</div>
+<!--// #WRAP -->
+
+<!-- 팩 커버 만들기 팝업 -->
+<section class="popup cover_pop"><!-- 팝업 활성화시 style="display:block" -->
+	<div class="cotn">
+		<p class="tit">팩 커버 만들기</p>
+		<p class="co_txt">운영 정책에 어긋나는 이미지 등록 시<br>이용에 제한이 있을 수 있습니다.</p>
+		<ul>
+			<li>
+				<a href="#n">
+					<i class="i_ab"></i>
+					<span>앨범에서 사진 선택</span>
+				</a>
+			</li>
+			<li>
+				<a href="#n">
+					<i class="i_pt"></i>
+					<span>사진 촬영</span>
+				</a>
+			</li>
+			<li>
+				<a href="#n">
+					<i class="i_file"></i>
+					<span>파일 선택</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<a href="#n" class="pop_close close">
+		<img src="../assets/image/common/btn_close.svg">
+	</a>
+</section>
+<!--// 팩 커버 만들기 팝업 -->
+
+<!-- AI로 만들기 전체팝업 -->
+<section class="full_pop ai_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#n" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				AI로 만들기
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="ai_wrap">
+				<div class="ai_form">
+					<p class="ai_tit">Ai와 함께 직접 이미지를 만들어 사용하세요!</p>
+					<div class="textarea">
+						<textarea cols="30" rows="10" placeholder="원하는 이미지 설명을 입력하세요"></textarea>
+					</div>
+					<div class="btn_wrap">
+						<a href="#n" class="btn">
+							<span>이미지 만들기</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- 이미지 제작결과 -->
+				<div class="res_wrap">
+					<p class="ai_tit">이미지 제작완료! 원하는 이미지를 골라보세요</p>
+					<ul>
+						<li>
+							<div class="form_rdo">
+								<label for="ai_01">
+									<figure class="img">
+										<img src="../assets/image/temp/ai_01.jpg">
+									</figure>
+									<input type="radio" name="ai" id="ai_01">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form_rdo">
+								<label for="ai_02">
+									<figure class="img">
+										<img src="../assets/image/temp/ai_02.jpg">
+									</figure>
+									<input type="radio" name="ai" id="ai_02" checked>
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form_rdo">
+								<label for="ai_03">
+									<figure class="img">
+										<img src="../assets/image/temp/ai_03.jpg">
+									</figure>
+									<input type="radio" name="ai" id="ai_03">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form_rdo">
+								<label for="ai_04">
+									<figure class="img">
+										<img src="../assets/image/temp/ai_04.jpg">
+									</figure>
+									<input type="radio" name="ai" id="ai_04">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--// 이미지 제작결과 -->
+			</div>
+
+			<div class="btn_wrap btn_fixed">
+				<a href="#n" class="btn color_type6"><span>완료</span></a><!-- 비활성일경우 class="inactv"추가 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// AI로 만들기 전체팝업 -->
+</body>
+</html>

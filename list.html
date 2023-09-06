@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="./list.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
+	<title>HTML LIST</title>
+</head>
+
+<body>
+<h1>HTML LIST</h1>
+
+<div class="menu_wrap all">
+	<!-- list 템플릿 -->
+	<section class="menu_list">
+		<table>
+			<colgroup>
+				<col width="20%">
+				<col width="20%">
+				<col width="20%">
+				<col width="40%">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">LINK</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#1_home [4/10 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">메인</td>
+					<td></td>
+					<td><a href="./html/1_home.html" target="_blank">main</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#2_home_mylocal [4/10 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">내주변찾기</td>
+					<td></td>
+					<td><a href="./html/2_mylocal.html" target="_blank">mylocal</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">이름으로 찾기</td>
+					<td>검색전</td>
+					<td><a href="./html/2_search_01.html" target="_blank">search_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>검색 하기</td>
+					<td><a href="./html/2_search_02.html" target="_blank">search_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>검색 결과없음</td>
+					<td><a href="./html/2_search_03.html" target="_blank">search_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#3_my_pack [4/10 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팩목록</td>
+					<td>리스트형</td>
+					<td><a href="./html/3_list_01.html" target="_blank">list_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>갤러리형</td>
+					<td><a href="./html/3_list_02.html" target="_blank">list_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>팩없음</td>
+					<td><a href="./html/3_list_03.html" target="_blank">list_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#2_3_QR [4/12 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">QR PLAY</td>
+					<td>인증완료</td>
+					<td><a href="./html/2_qr_cmplt.html" target="_blank">qr_cmplt</a></td>
+					<td class="comment">
+						<p>
+							2023-04-11_수정<br>
+							id="header" -> id="head"
+							<br>id="contents" -> id="content"
+						</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>인증실패</td>
+					<td><a href="./html/2_qr_fail.html" target="_blank">qr_fail</a></td>
+					<td class="comment">
+						<p>
+							2023-04-11_수정<br>
+							id="header" -> id="head"
+							<br>id="contents" -> id="content"
+						</p>
+					</td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#4_pack_map [4/12 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팩</td>
+					<td>보유팩</td>
+					<td><a href="./html/4_pack_01.html" target="_blank">pack_01</a></td>
+					<td class="comment">
+						<p>LIVE TALK 팝업 有</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>NFT발행전</td>
+					<td><a href="./html/4_pack_02.html" target="_blank">pack_02</a></td>
+					<td class="comment">
+						<p>NFT발행시작 팝업 有</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>NFT발행후</td>
+					<td><a href="./html/4_pack_03.html" target="_blank">pack_03</a></td>
+					<td class="comment">
+						<p>NFT발행완료 팝업 有</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>보유하지않은 팩</td>
+					<td><a href="./html/4_pack_04.html" target="_blank">pack_04</a></td>
+					<td class="comment">
+						<p>Get IT 팝업 有</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팩 팝업</td>
+					<td>NFT발행시작</td>
+					<td><a href="./html/4_pack_pop_01.html" target="_blank">pack_pop_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>NFT발행완료</td>
+					<td><a href="./html/4_pack_pop_02.html" target="_blank">pack_pop_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>Wallet연결필요</td>
+					<td><a href="./html/4_pack_pop_03.html" target="_blank">pack_pop_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>Get it</td>
+					<td><a href="./html/4_pack_pop_04.html" target="_blank">pack_pop_04</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">맵</td>
+					<td></td>
+					<td><a href="./html/4_pack_local.html" target="_blank">pack_local</a></td>
+					<td class="comment">
+						<p>획득하지않은핀 클릭 > SPOT기본정보제공영역</p>
+						<p>획득한핀 클릭 > spot상세 팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">binder</td>
+					<td></td>
+					<td><a href="./html/4_binder.html" target="_blank">binder</a></td>
+					<td class="comment">
+						<p>1번 이미지 클릭 > spot상세 팝업</p>
+						<p>spot상세 댓글영역 클릭 > LIVE TALK 팝업</p>
+						<p>LIVE TALK edit버튼 클릭 > 바닥팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>allca</td>
+					<td><a href="./html/4_binder_allca.html" target="_blank">binder_allca</a></td>
+					<td class="comment">
+						<p>1번 이미지 클릭 > spot상세 팝업</p>
+						<p>spot상세 댓글영역 클릭 > LIVE TALK 팝업</p>
+						<p>LIVE TALK edit버튼 클릭 > 바닥팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">spotcard</td>
+					<td></td>
+					<td><a href="./html/4_spotcard.html" target="_blank">spotcard</a></td>
+					<td class="comment">
+						<p>spot상세 댓글영역 클릭 > LIVE TALK 팝업</p>
+						<p>LIVE TALK edit버튼 클릭 > 바닥팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">talk</td>
+					<td>전체톡 없음</td>
+					<td><a href="./html/4_talk_01.html" target="_blank">talk_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>전체톡보기</td>
+					<td><a href="./html/4_talk_02.html" target="_blank">talk_02</a></td>
+					<td class="comment">
+						<p>LIVE TALK edit버튼 클릭 > 바닥팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>스팟내톡만</td>
+					<td><a href="./html/4_talk_03.html" target="_blank">talk_03</a></td>
+					<td class="comment">
+						<p>LIVE TALK edit버튼 클릭 > 바닥팝업</p>
+					</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">talk 바닥팝업</td>
+					<td>삭제</td>
+					<td><a href="./html/4_talk_04.html" target="_blank">talk_04</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>신고</td>
+					<td><a href="./html/4_talk_05.html" target="_blank">talk_05</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#5_studio [4/16 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">studio_메인</td>
+					<td></td>
+					<td><a href="./html/5_studio_01.html" target="_blank">studio_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팩상세</td>
+					<td>공개중</td>
+					<td><a href="./html/5_studio_02.html" target="_blank">studio_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>제작중</td>
+					<td><a href="./html/5_studio_03.html" target="_blank">studio_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">정보입력</td>
+					<td>입력전</td>
+					<td><a href="./html/5_studio_04.html" target="_blank">studio_04</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>입력후</td>
+					<td><a href="./html/5_studio_05.html" target="_blank">studio_05</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">AI로 만들기</td>
+					<td></td>
+					<td><a href="./html/5_ai_01.html" target="_blank">ai_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">AI로 배경음악 만들기</td>
+					<td></td>
+					<td><a href="./html/5_ai_02.html" target="_blank">ai_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">spot info</td>
+					<td>위치설정전</td>
+					<td><a href="./html/5_spot_01.html" target="_blank">spot_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>위치설정후</td>
+					<td><a href="./html/5_spot_02.html" target="_blank">spot_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>위치설정 팝업</td>
+					<td><a href="./html/5_spot_03.html" target="_blank">spot_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팝업</td>
+					<td>팩커버만들기</td>
+					<td><a href="./html/5_pop_01.html" target="_blank">pop_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>수정취소</td>
+					<td><a href="./html/5_pop_02.html" target="_blank">pop_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>비공개</td>
+					<td><a href="./html/5_pop_03.html" target="_blank">pop_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>삭제불가</td>
+					<td><a href="./html/5_pop_04.html" target="_blank">pop_04</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu_section_02 ignore">
+					<td colspan="4">#5_mypage [4/16 완료]</td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">마이페이지</td>
+					<td></td>
+					<td><a href="./html/6_mypage_01.html" target="_blank">mypage_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>비밀번호변경</td>
+					<td><a href="./html/6_mypage_02.html" target="_blank">mypage_02</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>비밀번호변경입력</td>
+					<td><a href="./html/6_mypage_03.html" target="_blank">mypage_03</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>이용약관</td>
+					<td><a href="./html/6_mypage_04.html" target="_blank">mypage_04</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01">팝업</td>
+					<td>로그아웃</td>
+					<td><a href="./html/6_pop_01.html" target="_blank">pop_01</a></td>
+					<td class="comment"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>회원탈퇴</td>
+					<td><a href="./html/6_pop_02.html" target="_blank">pop_02</a></td>
+					<td class="comment"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// list 템플릿 -->
+</div>
+
+<!-- list 템플릿 -->
+<section class="menu_list" style="display:none;">
+	<table>
+		<thead>
+			<tr class="menu_section">
+				<th colspan="9">
+					<h1>list 템플릿</h1>
+				</th>
+			</tr>
+			<tr>
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="menu01 ignore">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><p class="link">/customer/main</p></td>
+				<td class="center name"></td>
+				<td class="center"></td>
+				<td class="comment"></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!--// list 템플릿 -->
+</body>
+</html>

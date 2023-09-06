@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#5_studio | 위치 찾기</title>
+	<link rel="stylesheet" href="../assets/css/studio.css">
+</head>
+
+<body>
+<!-- 위치 찾기 전체팝업 -->
+<section class="full_pop pick_pop on"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="5_spot_01.html" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				위치 찾기
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<!-- 위치찾기 -->
+			<div class="pick_wrap">
+				<!-- 검색영역 -->
+				<div class="srch_wrap">
+					<div class="inpt_wrap">
+						<input type="text" placeholder="장소, 주소 검색">
+					</div>
+				</div>
+				<!--// 검색영역 -->
+
+				<div class="pick_map">
+					<!-- 지도영역 -->
+					<div class="map_area">
+						<!-- 지도 -->
+						<img src="../assets/image/temp/bg_map_01.jpg" style="height:100%; width:100%;" alt="지도">
+						<!--// 지도 -->
+
+						<!-- 내위치 아이콘 -->
+						<span class="my_loc on" style="left:50%; top:20%;"></span>
+						<!--// 내위치 아이콘 -->
+
+						<!-- 선택된위치 -->
+						<div class="pick" style="left:120px; top:411px;"><!-- x좌표 : 120 / y좌표 411 -->
+							<span>위치 선택</span>
+							<img src="../assets/image/common/icon_map_03.svg">
+						</div>
+						<!--// 선택된위치 -->
+					</div>
+					<!--// 지도영역 -->
+
+					<!-- 내위치버튼 -->
+					<a href="#none" class="local_btn on"><!-- 활성화시 class="on"추가 -->
+						<i class="i_loc"></i>
+					</a>
+					<!--// 내위치버튼 -->
+				</div>
+			</div>
+			<!--// 위치찾기 -->
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// 위치 찾기 전체팝업 -->
+</body>
+</html>

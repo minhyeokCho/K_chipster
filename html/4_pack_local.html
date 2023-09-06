@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#4_pack | 맵</title>
+	<link rel="stylesheet" href="../assets/css/map_pack.css">
+</head>
+
+<body>
+
+<!-- #WRAP -->
+<div id="wrap" class="map_pack"><!-- #4_pack_map : MAP : class="map_pack" 추가 -->
+	<!-- #header -->
+	<header id="header">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="1_home.html" class="back">
+					<span class="blind">뒤로가기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				<strong>MAP</strong>
+			</h1>
+			<!--// 타이틀 -->
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<div class="btn_head btn_chat">
+					<a href="#none" class="btn_full_pop" open-pop="talk_pop">
+						<span class="blind">채팅</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents">
+		<div class="sub">
+			<div class="pack_local_wrap">
+				<!-- 팩 타이틀 -->
+				<div class="pack_title">
+					<h2>졸업생이 알려주는 항공대 고양이 주요 출몰 지역 찾아보면 다나옴 </h2>
+				</div>
+				<!--// 팩 타이틀 -->
+
+				<!-- 지도영역 -->
+				<div class="map_area">
+					<!-- 지도 -->
+					<img src="../assets/image/temp/bg_map_01.jpg" style="height:100%; width:100%;" alt="지도">
+					<!--// 지도 -->
+
+					<!-- 미획득spot -->
+					<div class="spot non" style="left: 80px; top: 70px;"><!-- x좌표 80 / y좌표 70 -->
+						<!--
+							획득spot class="use"
+							미획득spot class="non"
+							미획득spot 활성화시 class="on"추가
+						-->
+						<a href="#none">
+							<img src="../assets/image/common/local_pin_off.png" alt="spot">
+						</a>
+						<div class="loc">
+							<p>항공우주박물관 앞 공터</p>
+						</div>
+					</div>
+					<!-- 미획득spot -->
+
+					<!-- 미획득spot -->
+					<div class="spot non" style="left: 200px; top: 320px;"><!-- x좌표 200 / y좌표 320 -->
+						<!--
+							획득spot class="use"
+							미획득spot class="non"
+							미획득spot 활성화시 class="on"추가
+						-->
+						<a href="#none">
+							<img src="../assets/image/common/local_pin_off.png" alt="spot">
+						</a>
+						<div class="loc">
+							<p>항공우주박물관 앞 공터</p>
+						</div>
+					</div>
+					<!-- 미획득spot -->
+
+					<!-- 획득spot -->
+					<div class="spot use" style="left: 200px; top:150px;"><!-- x좌표 200 / y좌표 150 -->
+						<!--
+							획득spot class="use"
+							미획득spot class="non"
+							미획득spot 활성화시 class="on"추가
+						-->
+						<a href="#none" class="btn_full_pop" open-pop="spot_pop">
+							<img src="../assets/image/common/local_pin_on.png" alt="spot">
+						</a>
+					</div>
+					<!-- 획득spot -->
+
+					<!-- 내위치 아이콘 -->
+					<span class="my_loc" style="left:50%; top:50%;" ></span>
+					<!--// 내위치 아이콘 -->
+				</div>
+				<!--// 지도영역 -->
+
+				<!-- 내위치버튼 -->
+				<a href="#none" class="local_btn"><!-- 활성화시 class="on"추가 -->
+					<i class="i_loc"></i>
+				</a>
+				<!--// 내위치버튼 -->
+
+				<!-- 댓글정보 -->
+				<div class="spot_pack_info">
+					<!-- 타이틀영역 -->
+					<div class="chat_tit">
+						<p class="num">sp No.<em>02</em></p>
+						<p class="tit">항공우주박물관 앞 공터</p>
+					</div>
+					<!--// 타이틀영역 -->
+
+					<!-- 댓글 -->
+					<div class="talk_list">
+						<div class="group gre"><!-- 텍스트 색상 초록 class="gre" 추가 -->
+							<span class="user">Chipster Original</span>
+							<span class="txt">경복궁 조아요!</span>
+						</div>
+						<div class="group pur"><!-- 텍스트 색상 보라 class="pur" 추가 -->
+							<span class="user">Chipster Original</span>
+							<span class="txt">튼튼이가 요즘에 안보여서 엄청 걱정했는데 덕분에 만날수 있었어요</span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">튼튼이가 요즘에 </span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">Good! Good! :</span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">댓글튼튼이가 요즘에 </span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">공우주박물관 앞 공터</span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">튼튼이가 요즘에 </span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">Good! Good! :</span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">튼튼이가 요즘에 </span>
+						</div>
+						<div class="group">
+							<span class="user">댓글작성자닉네임</span>
+							<span class="txt">튼튼이가 요즘에 </span>
+						</div>
+					</div>
+					<!--// 댓글 -->
+				</div>
+				<!--// 댓글정보 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+
+	<!-- 팩탭바 -->
+	<aside class="tab_bar pack">
+		<div class="cotn">
+			<div class="tab_btn map on"><!-- 활성화시 class="on" 추가 -->
+				<a href="4_pack_local.html">
+					<span class="blind">내 위치</span>
+				</a>
+			</div>
+			<div class="tab_btn ar">
+				<a href="#none">
+					<span class="blind">AR</span>
+				</a>
+			</div>
+			<div class="tab_btn binder">
+				<a href="4_binder.html">
+					<span class="blind">binder</span>
+				</a>
+			</div>
+		</div>
+	</aside>
+	<!--// 팩탭바 -->
+</div>
+<!--// #WRAP -->
+
+<!-- spot상세 전체팝업 -->
+<section class="full_pop spot_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="spot_detail">
+				<!-- spot상세정보 -->
+				<div class="detail_card">
+					<div class="cotn">
+						<!-- 이미지영역 -->
+						<div class="img_area">
+							<figure class="img">
+								<img src="../assets/image/temp/pack_05.jpg">
+							</figure>
+						</div>
+						<!--// 이미지영역 -->
+
+						<!-- 텍스트영역 -->
+						<div class="txt_area"><!-- 텍스트 전체보기 class="on"추가 -->
+							<p class="tit">항공우주박물관 앞 공터</p>
+							<p class="info">
+								<span class="num">sp No.<em>02</em></span> :
+								<span class="addr">경기도 고양시 항공대학로 76</span>
+							</p>
+							<p class="txt">
+								햇빛이 좋은 날이면 창업보육센터 주차장 한쪽 구석에서 플닢이가 풀향기 맡으면서 졸고 있어요글자제한이 어느정도는 있겠지만 내용이 꽤 많을꺼라, 일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오육칠팔구십일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오육칠팔구십 일이삼사오 육칠팔구십 일이삼사오육칠 팔구십 일이삼사오 육칠팔구십 일이삼사 오육칠팔구십
+							</p>
+							<p class="date">2023.03.31</p>
+						</div>
+						<!--// 텍스트영역 -->
+
+						<button type="button" class="btn_more">
+							<span class="blind">더보기</span>
+						</button>
+					</div>
+				</div>
+				<!--// spot상세정보 -->
+
+				<!-- TALK -->
+				<div class="pop_talk">
+					<!-- live talk -->
+					<div class="talk_wrap">
+						<div class="talk_tit">
+							<div class="talk_cnt">
+								<span>175</span>
+							</div>
+						</div>
+						<div class="talk_list">
+							<div class="group gre"><!-- 텍스트 색상 초록 class="gre" 추가 -->
+								<span class="user">Chipster Original</span>
+								<span class="txt">경복궁 조아요!</span>
+							</div>
+							<div class="group pur"><!-- 텍스트 색상 보라 class="pur" 추가 -->
+								<span class="user">Chipster Original</span>
+								<span class="txt">튼튼이가 요즘에 안보여서 엄청 걱정했는데 덕분에 만날수 있었어요</span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">튼튼이가 요즘에 </span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">Good! Good! :</span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">튼튼이가 요즘에 </span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">튼튼이가 요즘에 </span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">Good! Good!  </span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">칩스칩스님이 올카 성공!</span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">나도 만나고 싶다구!!! </span>
+							</div>
+							<div class="group">
+								<span class="user">댓글작성자닉네임</span>
+								<span class="txt">Good! Good!  </span>
+							</div>
+						</div>
+					</div>
+					<!--// live talk -->
+					<a href="#none" class="go_view btn_full_pop" open-pop="talk_pop">
+						<span class="blind">댓글팝업 이동</span>
+					</a>
+				</div>
+				<!--// TALK -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// spot상세팝업 전체팝업 -->
+
+<!-- LIVE TALK 전체팝업 -->
+<section class="full_pop talk_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				LIVE <strong>TALK</strong>
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="talk_inner">
+				<!-- 팩 타이틀 -->
+				<div class="pack_title">
+					<h2>졸업생이 알려주는 항공대 고양이 주요 출몰 지역 찾아보면 다나옴 </h2>
+				</div>
+				<!--// 팩 타이틀 -->
+
+				<!-- talk목록 -->
+				<div class="chat_list_wrap">
+					<!-- 데이터없음 -->
+					<div class="data_none">
+						<figure class="img">
+							<img src="../assets/image/common/chip_10.png" >
+						</figure>
+						<p class="txt_01">안녕하세요~</p>
+						<p class="txt_02">팩톡을 남겨주세요!<br>첫 톡을 남겨주시면 복이 온대요~</p>
+					</div>
+					<!--// 데이터없음 -->
+				</div>
+				<!--// talk목록 -->
+
+				<!-- 채팅입력 -->
+				<div class="btm_fixed">
+					<!-- 검색 -->
+					<div class="text_input">
+						<form>
+							<input type="text" placeholder="글을 입력해 주세요">
+							<button type="button" class="btn_submit">
+								<i class="icon_submit i_chat"></i>
+							</button>
+						</form>
+					</div>
+					<!--// 검색 -->
+				</div>
+				<!--// 채팅입력 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// LIVE TALK 전체팝업 -->
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#2_home_mylocal | 내주변찾기</title>
+	<link rel="stylesheet" href="../assets/css/mylocal.css">
+</head>
+
+<body>
+<!-- #WRAP -->
+<div id="wrap" class="mylocal_map"><!-- 내 주변 찾기 class="mylocal_map" 추가 -->
+	<!-- #header -->
+	<header id="header">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="1_home.html" class="back">
+					<span class="blind">뒤로가기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				내 주변 찾기
+			</h1>
+			<!--// 타이틀 -->
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<div class="btn_head btn_my">
+					<a href="6_mypage_01.html">
+						<span class="blind">마이페이지</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents">
+		<div class="sub">
+			<div class="mylocal_wrap">
+				<!-- 지도영역 -->
+				<div class="map_area">
+					<!-- 지도 -->
+					<img src="../assets/image/temp/bg_map_01.jpg" style="height:100%; width:100%;" alt="지도">
+					<!--// 지도 -->
+
+					<a href="#none" class="spot" style="left:50px; top:217px;"><!-- x좌표 50 / y좌표 217 --><!-- 활성화시 class="on"추가 -->
+						<img src="../assets/image/common/target_chip.png" alt="spot">
+					</a>
+					<a href="#none" class="spot" style="left:40px; top:329px;"><!-- x좌표 40 / y좌표 329 -->
+						<img src="../assets/image/common/target_chip.png" alt="spot">
+					</a>
+					<a href="#none" class="spot" style="left:170px; top:156px;"><!-- x좌표 170 / y좌표 156 -->
+						<img src="../assets/image/common/target_chip.png" alt="spot">
+					</a>
+
+					<!-- 내위치 아이콘 -->
+					<span class="my_loc" style="left:50%; top:50%;" ></span>
+					<!--// 내위치 아이콘 -->
+				</div>
+				<!--// 지도영역 -->
+
+				<!-- 내위치버튼 -->
+				<a href="#none" class="local_btn"><!-- 활성화시 class="on"추가 -->
+					<i class="i_loc"></i>
+				</a>
+				<!--// 내위치버튼 -->
+
+				<!-- 팩정보 -->
+				<div class="spot_pack_info"><!-- 활성화시 class="on"추가 -->
+					<div class="cotn">
+						<div class="pack_group">
+							<div class="cotn">
+								<!-- 이미지영역 -->
+								<div class="img_area">
+									<figure class="img">
+										<img src="../assets/image/temp/pack_02.png" >
+									</figure>
+								</div>
+								<!--// 이미지영역 -->
+
+								<!-- 텍스트영역 -->
+								<div class="txt_area">
+									<p class="nickname">닉네임</p>
+									<p class="tit">졸업생이 알려주는 항공대 고양이 주요 출몰 지역 고양이 주요 출몰 지역</p>
+									<div class="addr">
+										<span class="cnt">12</span>
+										<p class="txt">/ 경기도 고양시 덕양구 항공대학로 76 외</p>
+									</div>
+									<div class="pack_info">
+										<div class="count">
+											<p>
+												<em class="current">28</em> / <em class="tot">999</em>
+											</p>
+										</div>
+										<div class="chat">
+											<span>1,045</span>
+										</div>
+									</div>
+								</div>
+								<!--// 텍스트영역 -->
+							</div>
+							<a href="4_pack_01.html" class="go_view">
+								<span class="blind">상세이동</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--// 팩정보 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+
+	<!-- 메인탭바 -->
+	<aside class="tab_bar main">
+		<div class="cotn">
+			<div class="tab_btn home"><!-- 활성화시 class="on" 추가 -->
+				<a href="1_home.html">
+					<span class="blind">홈</span>
+				</a>
+			</div>
+			<div class="tab_btn pack">
+				<a href="3_list_01.html">
+					<span class="blind">my pack</span>
+				</a>
+			</div>
+			<div class="tab_btn add">
+				<a href="5_studio_01.html">
+					<span class="blind">스튜디오</span>
+				</a>
+			</div>
+		</div >
+	</aside>
+	<!--// 메인탭바 -->
+</div>
+<!--// #WRAP -->
+</body>
+</html>

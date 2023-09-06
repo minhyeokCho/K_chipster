@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 #2_home_mylocal CSS 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ 내주변찾기 ] ========================================================================================== */
+.mylocal_map #contents{padding-bottom:calc(constant(safe-area-inset-bottom) + 60px); padding-bottom:calc(env(safe-area-inset-bottom) + 60px);}
+.mylocal_map #header .header_wrap h1,
+.search_mylocal #header .header_wrap h1 {font-size:20px; font-weight:400;}
+
+
+/* 지도영역 */
+.mylocal_wrap {height:calc(100vh - (114px - constant(safe-area-inset-bottom))); height:calc(100vh - (114px - env(safe-area-inset-bottom))); position:relative; overflow:hidden;}
+.mylocal_wrap .map_area {height:100%; position:relative;}
+.mylocal_wrap .map_area .spot {display:block; width:50px; height:50px; box-shadow:2px 2px 10px rgba(0, 0, 0, 0.15); border-radius:50%; transition:transform .3s; position:absolute;}
+.mylocal_wrap .map_area .spot.on {transform:scale(1.8);}
+.mylocal_wrap .map_area .spot img {display:block; width:100%; height:100%;}
+
+/* 팩정보 */
+.spot_pack_info {position:absolute; left:0; bottom:-100%; width:100%; background-color:#fff; box-sizing:border-box; transition:bottom .3s; z-index:2;}
+.spot_pack_info.on {bottom:0;}
+.spot_pack_info .cotn {padding:15px;}
+
+/* ============================== [ 이름으로 찾기 ] ========================================================================================== */
+
+.loc_srch_wrap {margin-top:15px; padding:0 15px;}
+.loc_srch_wrap .data_none.before .img {width:65px;}
+.loc_srch_wrap .pack_li li {margin-top:15px;}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 #6 MY PAGE CSS 》
+************************************************************************************************************************************************************ */
+
+/* ============================== [ MY PAGE 메인 ] ========================================================================================== */
+.my_wrap {margin-top:24px; padding:0 15px;}
+
+/* 프로필이미지 */
+.profile a {width:78px; height:78px; margin:0 auto; display:block;}
+.profile .img {width:100%; height:100%; position:relative;}
+.profile .img::after {display:block; content:''; width:33px; height:33px; position:absolute; right:-5px; bottom:-5px; background:url(../image/common/icon_photo_04.svg) no-repeat 0 0; background-size:100% 100%;}
+
+/* 프로필정보 */
+.pro_info {margin-top:15px;}
+.pro_info .group {border:1px solid #e0e0e0; border-radius:15px; padding:15px; box-sizing:border-box;}
+.pro_info .group ~ .group {margin-top:13px;}
+.pro_info .group .item {display:flex; align-items:center;}
+.pro_info .group .item ~ .item {margin-top:24px;}
+.pro_info .group.link_grp .item {height:32px;}
+.pro_info .group.link_grp .item ~ .item {margin-top:15px;}
+.pro_info .group .item .cotn {flex:1;}
+.pro_info .group .item .label {width:60px; margin-right:4px;}
+.pro_info .group .item .txt {font-weight:500;}
+.pro_info .group .item .txt.ver {color:#ABABAB;}
+.pro_info .group .tit {font-size:12px; color:#ababab; font-weight:500; margin-bottom:15px;}
+.pro_info .group .my_link {display:block; height:100%; line-height:32px; width:100%;}
+.pro_info .group .pw_group {display:flex; align-items:center; justify-content:space-between;}
+.pro_info .group .pw_group .btn_pw {background-color:#28AA7F; color:#fff; font-size:12px; width:88px; height:24px; line-height:24px; border-radius:12px; text-align:center;}
+.pro_info .group .btn_wrap {width:100%;}
+.pro_info .group .btn_wrap .btn {padding:13px 0; font-size:15px; font-weight:500;}
+.pro_info .group .nick_wrap {height:38px; position:relative;}
+.pro_info .group .nick_wrap input {width:100%; padding:9px 38px 9px 0; border-bottom:1px solid #28AA7F; box-sizing:border-box; line-height: 1;}
+.pro_info .group .nick_wrap button {position:absolute; right:0; top:0; width:38px; height:38px; background:url(../image/common/icon_add_02.svg);}
+
+/* ============================== [ 비밀번호변경 ] ========================================================================================== */
+.pw_wrap {margin-top:24px; padding:0 15px;}
+.pw_wrap .txt_area {padding-right:120px; background:url(../image/common/chip_15.png) no-repeat right top 12px; background-size:115px 68px; min-height:80px;}
+.pw_wrap .txt_area .pw_tit {font-size:18px; font-weight:600; line-height:24px;}
+.pw_wrap .txt_area .pw_txt {font-size:12px; font-weight:500; margin-top:14px; line-height:18px; color:#666; max-width:172px;}
+.pw_wrap .input_area .inpt_wrap ~ .inpt_wrap {margin-top:12px;}
+.pw_wrap .btn_wrap {width:160px; margin:24px auto 0;}
+.pw_wrap .btn_wrap .btn {padding:12px 0; font-size:15px; font-weight:500;}
+
+/* ============================== [ 비밀번호변경 ] ========================================================================================== */
+.policy_wrap {margin-top:32px; padding:0 15px;}
+.policy_wrap .group ~ .group {margin-top:24px;}
+.policy_wrap .group .tit {font-weight:600; font-size:18px; line-height:24px; margin-bottom:12px;}
+.policy_wrap .group .box {border:1px solid #e0e0e0; border-radius:12px; padding:18px; box-sizing:border-box; height:270px;}
+.policy_wrap .group .box .cotn {overflow-y:auto; height:100%;}
+.policy_wrap .group .box .cotn p {font-size:12px; font-weight:500; line-height:18px;}

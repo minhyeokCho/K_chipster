@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#5_studio | AI로 배경음악 만들기</title>
+	<link rel="stylesheet" href="../assets/css/studio.css">
+</head>
+
+<body>
+<!-- AI로 만들기 전체팝업 -->
+<section class="full_pop ai_music_pop on"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#n" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				AI로 배경음악 만들기
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="ai_wrap">
+				<div class="ai_form">
+					<p class="ai_tit">Ai와 함께 직접 이미지를 만들어 사용하세요!</p>
+					<div class="textarea">
+						<textarea cols="30" rows="10" placeholder="어떤 음악이면 좋을까요?&#13;&#10;팩의 성격이나 설명을 적어주세요."></textarea>
+					</div>
+					<div class="btn_wrap">
+						<a href="#n" class="btn">
+							<span>음악 만들기</span>
+						</a>
+					</div>
+				</div>
+
+				<!-- 음악 제작결과 -->
+				<div class="res_wrap res_music">
+					<p class="ai_tit">이미지 제작완료! 원하는 음악을 골라보세요</p>
+					<ul>
+						<li>
+							<div class="form_rdo">
+								<div class="music_wrap">
+									<figure class="img">
+										<img src="../assets/image/temp/music.png">
+									</figure>
+									<a href="#n" class="m_play">
+										<span class="blind">재생</span>
+									</a>
+								</div>
+								<label for="ai_011">
+									<input type="radio" name="ai1" id="ai_011" checked>
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form_rdo">
+								<div class="music_wrap">
+									<figure class="img">
+										<img src="../assets/image/temp/music.png">
+									</figure>
+									<a href="#n" class="m_play">
+										<span class="blind">재생</span>
+									</a>
+								</div>
+								<label for="ai_021">
+									<input type="radio" name="ai1" id="ai_021">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li class="on"><!-- 음악파일 재생시 class="on" 추가 -->
+							<div class="form_rdo">
+								<div class="music_wrap">
+									<figure class="img">
+										<img src="../assets/image/temp/music.png">
+									</figure>
+									<a href="#n" class="m_play">
+										<span class="blind">재생</span>
+									</a>
+								</div>
+								<label for="ai_031">
+									<input type="radio" name="ai1" id="ai_031">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="form_rdo">
+								<div class="music_wrap">
+									<figure class="img">
+										<img src="../assets/image/temp/music.png">
+									</figure>
+									<a href="#n" class="m_play">
+										<span class="blind">재생</span>
+									</a>
+								</div>
+								<label for="ai_041">
+									<input type="radio" name="ai1" id="ai_041">
+									<span class="icon">
+										<i></i>
+									</span>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--// 음악 제작결과 -->
+			</div>
+
+			<div class="btn_wrap btn_fixed">
+				<a href="#n" class="btn color_type6"><span>완료</span></a><!-- 비활성일경우 class="inactv"추가 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// AI로 만들기 전체팝업 -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 #2_home CSS 》
+************************************************************************************************************************************************************ */
+.main {margin-top:15px;}
+.main .tit_15 {line-height:2.667em; padding:0 15px;}
+
+/* header */
+#header .header_wrap h1.logo {width:86px; height:27px; padding-left:19px; position:relative; left:0; top:0; transform:none;}
+
+/* QuickMenu */
+.quick_wrap {padding:0 15px;}
+.quick_wrap ul {display:flex; justify-content:space-between;}
+.quick_wrap ul li {position:relative; width:25%;}
+.quick_wrap ul li ~ li::after {display:block; content:''; width:1px; height:14px; position:absolute; left:0; bottom:0; background-color:#d2d2d2;}
+.quick_wrap ul li a img {width:37px; height:36px; display:block; margin:0 auto;}
+.quick_wrap ul li a span {font-size:12px; color:#353535; margin-top:4px; display:block; text-align:center;}
+.quick_wrap .btn_wrap {margin-top:8px;}
+.quick_wrap .btn_wrap .btn {padding:6px 0;}
+.quick_wrap .btn_wrap .btn.btn_qr span {padding-left:24px; background:url(../image/common/icon_qr.svg) no-repeat left center; background-size:16px 16px;}
+
+/* 새로나온팩 */
+.pack_slide_wrap {margin-top:12px;}
+.pack_slide_wrap .swiper {padding:0 15px;}
+.pack_slide_wrap .pack_slide {width:100px;}
+.pack_slide_wrap .pack_item .img_area {height:124px;}
+/* 인기팩 */
+.pack_popular {margin-top:15px;}
+.pack_popular .tit_15 {background:url(../image/common/chip_04.png) no-repeat right 29px bottom; background-size:45px 35px;}
+.pack_popular .pack_li {padding:0 15px;}
+.pack_popular .pack_li li ~ li {margin-top:15px;}
+.pack_popular .btn_wrap {padding:0 15px; margin-top:15px;}
+.pack_popular .btn_wrap .btn {padding:10px 0;}
+.pack_popular .btn_wrap .btn.btn_more span {padding-left:24px; background:url(../image/common/icon_more.svg) no-repeat left center; background-size:16px 16px;}
