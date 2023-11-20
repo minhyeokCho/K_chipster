@@ -16,7 +16,7 @@ h1 {font-size:24px; margin-bottom:10px;}
 .note dl dt:before {content:"#"; font-weight:bold;}
 .note dl dt:after {content:" : ";}
 .note dl dd {margin-right:10px;}
-
+.add {background-color: #41ffb7;}
 .status {overflow:hidden; margin-bottom:10px;}
 .status {overflow:hidden;}
 .status li {float:left; list-style:none; margin-left:5px;}
