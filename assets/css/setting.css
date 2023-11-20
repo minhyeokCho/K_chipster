@@ -164,16 +164,16 @@ input:disabled:-ms-input-placeholder {
 	color:#ababab;
 }
 textarea::placeholder {
-	color:#999999;
+	color:#D2D2D2;
 }
 textarea::-webkit-placeholder {
-	color:#999999;
+	color:#D2D2D2;
 }
 textarea::-moz-placeholder {
-	color:#999999;
+	color:#D2D2D2;
 }
 textarea::-ms-placeholder {
-	color:#999999;
+	color:#D2D2D2;
 }
 .blind {
 	overflow:hidden;

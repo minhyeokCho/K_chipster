@@ -34,6 +34,13 @@
 
 			<!-- 버튼 -->
 			<div class="btn_area">
+				<!-- 2023-10-11 추가 -->
+				<div class="btn_head btn_alarm">
+					<a href="#" class="btn_full_pop" open-pop="noti_pop">
+						<span class="cnt">3</span>
+					</a>
+				</div>
+				<!--// 2023-10-11 추가 -->
 				<div class="btn_head btn_my">
 					<a href="6_mypage_01.html">
 						<span class="blind">마이페이지</span>
@@ -416,5 +423,75 @@
 	<!--// 메인탭바 -->
 </div>
 <!--// #WRAP -->
+
+<!-- 알림 전체팝업 -->
+<section class="full_pop noti_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				<strong>알림</strong>
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="noti_inner">
+				<!-- 알림목록 -->
+				<div class="noti_list">
+					<div class="group">
+						<div class="img_area">
+							<figure class="img">
+								<a href="#"><img src="../assets/image/common/profile_none.png" alt=""></a>
+							</figure>
+						</div>
+						<div class="txt_area">
+							<p class="txt">연아킴님이 내게 메시지를 남겼습니다.</p>
+							<span class="date">1분전</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="img_area">
+							<figure class="img">
+								<a href="#"><img src="../assets/image/common/feed_bdg_01.png" alt=""></a>
+							</figure>
+						</div>
+						<div class="txt_area">
+							<p class="txt">연아킴님이 <a href="#">아윌비백광진구산책로</a> 팩을 다운받았습니다.</p>
+							<span class="date">3일전</span>
+						</div>
+					</div>
+					<div class="group">
+						<div class="img_area">
+							<figure class="img">
+								<a href="#"><img src="../assets/image/temp/profile_02.png" alt=""></a>
+							</figure>
+						</div>
+						<div class="txt_area">
+							<p class="txt">고양냥냥님이 내게 메시지를 남겼습니다.</p>
+							<span class="date">2023.03.29 18:45</span>
+						</div>
+					</div>
+				</div>
+				<!--// 알림목록 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// 알림 전체팝업 -->
 </body>
 </html>

@@ -11,6 +11,7 @@ $(document).ready(function(){
 	$('.btm_pop').length && bmtPopup(); //바닥팝업
 	$('.full_pop').length && fullPopup(); //전체팝업
 	$('.user_cnt').length && userCnt(); //참여수제한 체크영역
+	$('.pf_li').length && pfSet(); //프로필 이미지 설정
 
 	if($('.user_wrap input[id="form_chk"]').is(":checked") == false){
 		$('.user_cnt').addClass('inactv');
@@ -209,4 +210,11 @@ function userCnt(){ //참여수제한 체크영역
 
 	});
 
+}
+
+function pfSet() { //프로필 이미지 설정
+	$('.pf_li label').on('click', function(){
+		$('.btn_set a').removeClass('color_type4')
+		$('.btn_set a').addClass('color_type6')
+	})
 }

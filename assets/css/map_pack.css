@@ -3,6 +3,11 @@
 /* ************************************************************************************************************************************************************
 						《 #4_pack_map CSS 》
 ************************************************************************************************************************************************************ */
+/* 2023-10-11 추가 */
+.btn_wrap.btn_fixed{position:fixed;bottom:0;left:50%;width:100%;max-width:768px; background-color:#fff; transform:translateX(-50%); padding:15px 15px calc(constant(safe-area-inset-bottom) + 15px);padding:15px 15px calc(env(safe-area-inset-bottom) + 15px);box-sizing:border-box;}
+.btn_fixed .btn{padding:10px 0; height:40px; box-sizing:border-box;}
+.btn_fixed .btn span {font-size:15px; line-height:1.3;}
+
 .pack_info #header .header_wrap h1 {bottom:0; transform:translate(-50%);}
 .pack_info #header .header_wrap h1 .img {width:59px;}
 .pack_info #contents {padding-bottom:calc(env(safe-area-inset-bottom) + 54px); padding-bottom:calc(const(safe-area-inset-bottom) + 54px);}
@@ -38,6 +43,12 @@
 .card.pack_group .box_info .pack_info .count p .current {font-size:14px; font-weight:500; margin-right:4px; vertical-align:middle; line-height:18px;}
 .card.pack_group .box_info .pack_info .count p .tot {margin-left:2px; color:#ababab;}
 .card.pack_group .box_info .pack_info .count p .tot::before {content:'/ ';}
+
+.card.pack_group .box_tit.user_i_nick .tit {margin-top:0;}
+.card.pack_group .box_tit.user_i_nick .user_i {margin-top:8px;}
+.card.pack_group .box_tit.user_i_nick .user_i a {display:flex; align-items:center; justify-content:center;}
+.card.pack_group .box_tit.user_i_nick .user_i figure {width:30px; height:30px; border-radius:50%; border:2px solid #fff; box-sizing:border-box; }
+.card.pack_group .box_tit.user_i_nick .user_i span {color:#666; font-size:11px; font-weight:500; margin-left:4px;}
 
 /* NFT버튼 */
 .btn_nft {display:none; position:absolute; right:-11px; bottom:-30px; width:110px; height:82px; z-index:1;}
@@ -171,3 +182,129 @@
 
 /* 채팅입력 */
 .talk_inner .btm_fixed {background-color:#F9F9F9; position:fixed; left:0; right:0; bottom:0; width:100%; box-sizing:border-box; padding:10px 15px calc(env(safe-area-inset-bottom) + 10px); padding:10px 15px calc(const(safe-area-inset-bottom) + 10px);max-width:768px; margin:0 auto;}
+
+
+
+
+
+
+
+
+/* 2023.10.11 추가 */
+/* ============================== [ 유저프로필 ] ========================================================================================== */
+.nick_tit {padding-top:60px; position:relative; text-align:center; margin-bottom:15px;}
+.nick_tit::after {display:block; content: ''; width:100%; height:60px; background-color:#f9f9f9; box-shadow: inset 0 -4px 30px 0 rgba(0, 0, 0, .1); position:absolute; left:0; top:0; z-index:-1;}
+.nick_tit .thum_img {width:78px; height:78px; margin:0 auto; box-sizing:border-box; margin-top:-44px; border-radius:50%; border:4px solid #fff; box-shadow:0 4px 10px 0 rgba(0, 0, 0, 0.25);}
+.nick_tit .thum_img img {width:100%; height:100%; object-fit: contain;}
+.nick_tit .state_msg {margin-top:14px; font-size:15px; font-weight:500; line-height:20px;}
+.nick_tit .list_msg {margin-top:8px; line-height:20px;}
+.nick_tit .list_msg a {font-weight:700; text-decoration:underline;}
+.nick_tit .list_msg strong {font-weight:700;}
+
+/* 탭 */
+.tab_wrap {display:flex;}
+.tab_wrap .tab {padding:10px; flex:1; font-size:16px; font-weight:500; color:#000; text-align:center; box-sizing:border-box; border-bottom:1px solid #D2D2D2;}
+.tab_wrap .tab.on {font-weight:700; color:#28aa7f; border-bottom:3px solid #28aa7f;}
+.tab_wrap .tab span {line-height:18px;}
+
+/* FEED목록 */
+.chat_list_wrap.feed_li {padding:24px 15px 0;}
+/* .feed_li .chat_list .group ~ .group {margin-top:12px;} */
+.feed_li .chat_list .group .txt_area {margin-left:12px;}
+.feed_li .chat_list .group .txt_area .chat_info .date {margin-left:0;}
+.feed_li .chat_list .group .txt_area .chat_info {padding-right:0;}
+.feed_li .chat_list .group .txt_area .txt_des {display:flex; justify-content:space-between;}
+.feed_li .chat_list .group .txt_area .txt_des div {flex:1;}
+.feed_li .chat_list .group .txt_area .txt_des .txt {color:#3b3c39; font-size:15px; line-height:20px;}
+.feed_li .chat_list .group .txt_area .txt_des .txt a {text-decoration:underline; text-underline-position : under;}
+.feed_li .chat_list .group .txt_area .txt_des .feed_img {margin-left:10px; width:48px; height:48px; border-radius:6px; overflow:hidden;}
+.feed_li .chat_list .group .txt_area .txt_des .feed_img img {width:100%; height:100%; object-fit:cover;}
+.feed_li .chat_list .group .txt_area .emoji {margin-top:8px; height:56px;}
+.feed_li .chat_list .group .txt_area .emoji img {width:auto; height:100%;}
+
+/* ============================== [ 프로필 이미지 설정 ] ========================================================================================== */
+.pf_img_set {padding:25px 15px 80px;}
+.pf_img_set .setting {margin-bottom:35px;}
+.pf_img_set .setting .tit {font-size:15px; line-height:20px; font-weight:700;}
+.set_btn {display:flex; margin-top:15px;}
+.set_btn label {display:block; flex:1; padding:11px 0; border-radius:20px; border:1px solid #ababab; background-color:#fff; text-align:center; position:relative; cursor:pointer;}
+.set_btn label input {overflow:hidden; font-size:0; line-height:0; position:absolute; left:-10%; top:-10%; height:0; width:0;}
+.set_btn label ~ label {margin-left:12px;}
+.set_btn label span {font-size:12px; padding-right:26px;}
+.set_btn label.pt span {background:url(../image/common/icon_photo_03.svg) no-repeat right center; background-size:18px auto;}
+.set_btn label.album span {background:url(../image/common/icon_album_02.svg) no-repeat right center; background-size:18px auto;}
+
+.pf_li {padding-top:10px; display:flex; flex-wrap:wrap; justify-content:space-between;}
+.pf_li label {cursor:pointer; width:25%; position:relative;}
+.pf_li label div {width:80px; height:80px; margin:0 auto; display:flex; align-items:center; justify-content:center;}
+.pf_li label figure {width:66px; height:66px; border:2px solid #fff; border-radius:50%; box-sizing:border-box;}
+.pf_li label figure img {width:100%; height:100%; object-fit:contain;}
+.pf_li label input:checked ~ div figure {width:80px; height:80px; box-shadow:0 4px 10px 0 rgba(0, 0, 0, .25); border:5px solid #702DFF;}
+.pf_li input[type="radio"] {overflow:hidden; font-size:0; line-height:0; position:absolute; left:-10%; top:-10%; height:0; width:0;}
+
+/* ============================== [ 스팟보기 ] ========================================================================================== */
+.spot_talk {position: absolute; left: 0; bottom: 0; width: 100%; height: 144px; background-color:rgba(37, 37, 37, .7);}
+.spot_talk::after {display:block; content: ''; width:100%; height:45px; background: linear-gradient(0deg, rgb(96, 96, 96) 0%, rgba(0,0,0,0) 100%); position:absolute; left:0; bottom:0;}
+.spot_talk .talk_list {height: 100%; overflow-y: auto; padding:8px 15px; box-sizing: border-box; position:relative;}
+.spot_talk .talk_list .group {padding:3px 0;}
+.spot_talk .talk_list .group .txt {font-size: 15px;}
+
+/* 버튼 */
+.control_wrap {position: absolute; left: 10px; top: 50px; width: calc(100% - 20px); display: flex;}
+.control_list {margin-left: 8px;}
+.r_cotn {margin-left: auto; display:flex;}
+.control_label {margin-top:5px; position:relative; display:block; cursor:pointer;}
+.control_label input {border:none; font-size:0; line-height:0; opacity:0; position:absolute; left:-10px; top:-10px; height:0; width:0;}
+
+.control {display: block; width: 32px; height: 32px; background-color: #fff; box-shadow:0 4px 8px 0 rgba(0, 0, 0, .25); border-radius:50%; transition:box-shadow .1s;}
+.control.loc_btn .i_loc {display: block; width: 32px; height: 32px; background:url(../image/map/icon_my_loc.svg) no-repeat center center; background-size:18px 18px;}
+input:checked ~ .loc_btn {box-shadow:0 4px 8px 0 #702DFF;}
+input:checked ~ .loc_btn .i_loc {background-image:url(../image/map/icon_my_loc_on.svg); background-size:24px 24px;}
+
+.control.coord_btn .i_coord {display: block; width: 32px; height: 32px; background:url(../image/map/icon_arr.svg) no-repeat center center; background-size:16px 16px;}
+input:checked ~ .coord_btn {box-shadow:0 4px 10px 0 rgba(0, 204, 102, .7);}
+input:checked ~ .coord_btn .i_coord {background-image:url(../image/map/icon_arr_on.svg); background-size:24px 24px;}
+
+/* 유저아이콘 */
+.user_list {display: flex;}
+.user_list a ~ a {margin-left: -12px;}
+.user_list a.user_icon {width: 36px; height: 36px;}
+.user_icon {display: block; width: 32px; height: 32px; border:3px solid #fff; box-shadow:0 2px 10px 0 rgba(0, 0, 0, .25); border-radius:50%; box-sizing: border-box;}
+.user_icon.u_g {border-color:#0CFF65;}
+.user_icon.u_p {border-color:#5B20FF;}
+.user_icon img {width: 100%; height: 100%;}
+
+/* ===== 지도 위 컨텐츠 ===== */
+.meta_pin {position: absolute; width: 36px; height: 42px;}
+.meta_pin img {width: 100%; height: 100%;}
+
+/* 스팟보기 > 내 위치 핀 */
+.spot_my_pin {position:absolute; width:24px; height:24px; background-color:#702DFF; border:3px solid #fff; box-sizing:border-box; box-shadow:0 4px 8px 0 rgba(81, 28, 227, .7); border-radius:50%;}
+.spot_my_pin::after {display:block; content:''; width:8px; height:8px; position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); background-color:#fff; opacity:.5; border-radius:50%;}
+
+/* 핀 */
+.user_pin {position: absolute;}
+.user_pin a.user_icon {width: 36px; height: 36px;}
+.user_pin .my_pin {position: absolute; right: -4px; bottom: -4px; display: block; width: 18px; height: 18px; background-color: #702DFF; border:3px solid #fff; box-shadow:0 4px 8px 0 rgba(81, 28, 227, .7); box-sizing: border-box; border-radius: 50%;}
+.user_pin .my_pin::after {display: block; content:''; width: 6px; height: 6px; background-color:rgba(255, 255, 255, .5); border-radius: 50%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+.user_pin.coord_pin .user_icon {box-shadow:0 2px 10px 0 rgba(12, 255, 101, .7);}
+.user_pin.coord_pin .my_coord {position:absolute; right:-4px; bottom:-4px; display:block; width:18px; height:18px; border-radius:50%; background:#fff url(../image/map/icon_arr_on.svg) no-repeat center center; background-size:12px 12px; box-shadow:0 4px 8px 0 rgba(12, 255, 101, .7);}
+
+/* 스위치 */
+.btn_switch {position:relative; margin-top:4px;}
+.btn_switch .forms_chk {position:relative; display:block; cursor:pointer; width:52px; height:24px;  border-radius:16px; box-shadow:0 4px 10px 0 rgba(0, 0, 0, .25);}
+.btn_switch .forms_chk .icon {box-sizing:border-box; position:absolute; left:3px; top:3px; width:18px; height:18px; background-color:#ffffff; box-shadow:0 4px 4px 0 rgba(0, 0, 0, .25); border-radius:50%; transform:translateX(0); z-index:1; transition:transform 0.2s 0.1s ease-in-out;}
+.btn_switch .forms_chk .bg {display:block; box-sizing:border-box; border:3px solid #888888; background-color:#888888; border-radius:40px; position:absolute; left:0; top:0; height:100%; width:100%; box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, .25); transition: transform .2s, background-color .2s;}
+.btn_switch .forms_chk .switch {display:flex; justify-content: flex-end; align-items: center; position:absolute; top:0; height:inherit; color:#fff; font-size:10px;}
+.btn_switch .forms_chk .switch.on {left:9px; opacity:0; visibility:hidden; transition: .3s;}
+.btn_switch .forms_chk .switch.off {right:8px; transition: .3s;}
+.btn_switch .forms_chk input:checked ~ .icon {transform:translateX(28px);}
+.btn_switch .forms_chk input:checked ~ .bg {border-color:#702DFF; background-color:#702DFF;}
+.btn_switch .forms_chk input:checked ~ .on {opacity:1; visibility:visible;}
+.btn_switch .forms_chk input:checked ~ .off {opacity:0; visibility:hidden;}
+
+/* 말풍선 */
+.tool {position:absolute; left:50%; top:-25px; transform: translateX(-50%); background:rgba(0, 0, 0, .7); border-radius:4px; padding:2px 10px; box-sizing:border-box; z-index:1; max-width:165px;}
+.tool::after {display:block; content: ''; background:url(../image/map/text_arr.svg) no-repeat 0 0; background-size:8px 4px; width:8px; height:4px; position:absolute; left:50%; bottom:-4px; transform: translateX(-50%);}
+.tool p {color:#fff; font-size:13px; white-space:nowrap; line-height:16px; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:1; -webkit-box-orient:vertical; width:100%;}

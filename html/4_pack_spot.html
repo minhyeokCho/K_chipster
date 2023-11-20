@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link rel="stylesheet" href="../assets/css/lib/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/css/lib/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/setting.css">
+	<link rel="stylesheet" href="../assets/css/common.css">
+	<script type="text/javascript" src="../assets/js/lib/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lib/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="../assets/js/common.js"></script>
+	<title>#4_pack | 맵 스팟보기</title>
+	<link rel="stylesheet" href="../assets/css/map_pack.css">
+</head>
+
+<body>
+
+<!-- #WRAP -->
+<div id="wrap" class="map_pack"><!-- #4_pack_map : MAP : class="map_pack" 추가 -->
+	<!-- #header -->
+	<header id="header">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="1_home.html" class="back">
+					<span class="blind">뒤로가기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				<strong>MAP</strong>
+			</h1>
+			<!--// 타이틀 -->
+
+			<!-- 버튼 -->
+			<div class="btn_area">
+				<div class="btn_head btn_chat">
+					<a href="#none" class="btn_full_pop" open-pop="talk_pop">
+						<span class="blind">채팅</span>
+					</a>
+				</div>
+			</div>
+			<!--// 버튼 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="contents">
+		<div class="sub">
+			<div class="pack_local_wrap metaverse">
+				<!-- 팩 타이틀 -->
+				<div class="pack_title">
+					<h2>홍대에서 감성찾기 카페 ver.</h2>
+				</div>
+				<!--// 팩 타이틀 -->
+
+				<!-- 지도영역 -->
+				<div class="map_area">
+					<!-- 지도 -->
+					<img src="../assets/image/temp/bg_map_02.jpg" style="height:100%; width:100%;" alt="지도">
+					<!--// 지도 -->
+
+					<!-- pin -->
+					<div class="meta_pin" style="left: 200px; top:150px;"><!-- x좌표 200 / y좌표 150 -->
+						<a href="#none">
+							<img src="../assets/image/map/pin_p.png" alt="pin">
+						</a>
+					</div>
+					<!-- pin -->
+
+					<!-- pin -->
+					<div class="meta_pin" style="left: 60px; top:180px;"><!-- x좌표 60 / y좌표 180 -->
+						<a href="#none">
+							<img src="../assets/image/map/pin_g.png" alt="pin">
+						</a>
+					</div>
+					<!-- pin -->
+
+					<!-- pin -->
+					<div class="meta_pin" style="left: 40px; top:200px;"><!-- x좌표 40 / y좌표 200 -->
+						<a href="#none">
+							<img src="../assets/image/map/pin_g.png" alt="pin">
+						</a>
+					</div>
+					<!-- pin -->
+
+					<!-- 아이콘 : 내위치 -->
+					<div class="spot_my_pin" style="left: 100px; top:450px;"><!-- x좌표 100 / y좌표 450 --></div>
+					<!--// 아이콘 -->
+				</div>
+				<!--// 지도영역 -->
+
+				<!-- 컨트롤버튼 -->
+				<div class="control_wrap">
+					<div class="r_cotn">
+						<!-- ON/OFF 스위치 -->
+						<div class="btn_switch">
+							<label class="forms_chk">
+								<input type="checkbox">
+								<i class="icon"></i>
+								<i class="bg"></i>
+								<span class="switch on">ON</span>
+								<span class="switch off">OFF</span>
+							</label>
+						</div>
+						<!--// ON/OFF 스위치 -->
+
+						<div class="control_list">
+							<!-- 유저아이콘 -->
+							<a href="#" class="user_icon u_p">
+								<img src="../assets/image/map/avatar_07.png">
+							</a>
+							<!--// 유저아이콘 -->
+
+							<!-- 내위치버튼 -->
+							<label class="control_label">
+								<input type="checkbox" checked>
+								<div class="control loc_btn">
+									<i class="i_loc"></i>
+								</div>
+							</label>
+							<!--// 내위치버튼 -->
+						</div>
+					</div>
+				</div>
+				<!--// 컨트롤버튼 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+
+	<!-- 팩탭바 -->
+	<aside class="tab_bar pack">
+		<div class="cotn">
+			<div class="tab_btn map on"><!-- 활성화시 class="on" 추가 -->
+				<a href="4_pack_local.html">
+					<span class="blind">내 위치</span>
+				</a>
+			</div>
+			<div class="tab_btn ar">
+				<a href="#none">
+					<span class="blind">AR</span>
+				</a>
+			</div>
+			<div class="tab_btn binder">
+				<a href="4_binder.html">
+					<span class="blind">binder</span>
+				</a>
+			</div>
+		</div>
+	</aside>
+	<!--// 팩탭바 -->
+</div>
+<!--// #WRAP -->
+
+<!-- LIVE TALK 전체팝업 -->
+<section class="full_pop talk_pop"><!-- 전체팝업 활성화 class="on"추가 -->
+	<!-- #header -->
+	<header id="head">
+		<div class="header_wrap">
+			<!-- 뒤로가기 -->
+			<div class="tit_ctrl">
+				<a href="#none" class="close">
+					<span class="blind">닫기</span>
+				</a>
+			</div>
+			<!--// 뒤로가기 -->
+
+			<!-- 타이틀 -->
+			<h1>
+				LIVE <strong>TALK</strong>
+			</h1>
+			<!--// 타이틀 -->
+		</div>
+	</header>
+	<!--// #header -->
+
+	<!-- #CONTENTS -->
+	<div id="content">
+		<div class="sub">
+			<div class="talk_inner">
+				<!-- 팩 타이틀 -->
+				<div class="pack_title">
+					<h2>졸업생이 알려주는 항공대 고양이 주요 출몰 지역 찾아보면 다나옴 </h2>
+				</div>
+				<!--// 팩 타이틀 -->
+
+				<!-- talk목록 -->
+				<div class="chat_list_wrap">
+					<!-- 데이터없음 -->
+					<div class="data_none">
+						<figure class="img">
+							<img src="../assets/image/common/chip_10.png" >
+						</figure>
+						<p class="txt_01">안녕하세요~</p>
+						<p class="txt_02">팩톡을 남겨주세요!<br>첫 톡을 남겨주시면 복이 온대요~</p>
+					</div>
+					<!--// 데이터없음 -->
+				</div>
+				<!--// talk목록 -->
+
+				<!-- 채팅입력 -->
+				<div class="btm_fixed">
+					<!-- 검색 -->
+					<div class="text_input">
+						<form>
+							<input type="text" placeholder="글을 입력해 주세요">
+							<button type="button" class="btn_submit">
+								<i class="icon_submit i_chat"></i>
+							</button>
+						</form>
+					</div>
+					<!--// 검색 -->
+				</div>
+				<!--// 채팅입력 -->
+			</div>
+		</div>
+	</div>
+	<!--// #CONTENTS -->
+</section>
+<!--// LIVE TALK 전체팝업 -->
+</body>
+</html>
