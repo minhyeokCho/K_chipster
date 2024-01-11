@@ -7,19 +7,19 @@
 /* ============================== [ 팩목록 ] ========================================================================================== */
 
 /* 팩현황 */
-.pack_board {background-color:#F4F4F4; display:flex; align-items:center; justify-content:space-between; padding:7px 19px; height:49px; box-sizing:border-box;}
+.pack_board {background-color:#F4F4F4; display:-webkit-box; display:-ms-flexbox; display:flex; -webkit-box-align:center; -ms-flex-align:center; align-items:center; -webkit-box-pack:justify; -ms-flex-pack:justify; justify-content:space-between; padding:7px 19px; height:49px; -webkit-box-sizing:border-box; box-sizing:border-box;}
 .pack_board .img {width:44px; height:35px;}
-.pack_board .board_tit {display:flex; align-items:center; margin:0 auto;}
+.pack_board .board_tit {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-align:center; -ms-flex-align:center; align-items:center; margin:0 auto;}
 .pack_board .board_tit p {font-size:15px; font-weight:700; line-height:1.4; margin-right:8px;}
 .pack_board .board_tit span {font-size:12px; line-height:1.750em;}
 .pack_board .board_tit span strong {margin:0 3px;}
-.pack_board .allca {display:flex; align-items:center;}
+.pack_board .allca {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-align:center; -ms-flex-align:center; align-items:center;}
 .pack_board .allca .img {width:32px; height:16px;}
 .pack_board .allca span {margin-left:8px; font-size:12px; line-height:1.750em;}
 .pack_board .allca span strong {margin-right:2px;}
 
 /* 정렬 */
-.sort_area {display:flex; justify-content:flex-end; padding:0 24px;}
+.sort_area {display:-webkit-box;display:-ms-flexbox;display:flex; -webkit-box-pack:end; -ms-flex-pack:end; justify-content:flex-end; padding:0 24px;}
 .sort_area a {display:block; width:17px; height:14px; background-position:0 0; background-repeat:no-repeat; background-size:17px 14px;}
 .sort_area a ~ a {margin-left:12px;}
 .sort_area a.sort_li {background-image:url(../image/common/sort_li.svg);}
